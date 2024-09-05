@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-template-areas: "header header header"
+                                "sidebar content content"
+                                "sidebar . box"
+                                "footer footer footer";
+            gap : 5px;
+        }
+        .header{
+            grid-area: header;
+            background-color: aqua;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: red;
+        }
+        .content{
+            grid-area: content;
+            background-color: green;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: aqua;
+        }
+        .box{
+            grid-area: box;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>HEADER</h1>
+        </header>
+        <section class="content">
+            <h2>CONTENT</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, reiciendis iusto? Voluptatum odit possimus enim fugit ad alias quos beatae.</p>
+        </section>
+        <section class="sidebar">
+            <h2>SİDEBAR</h2>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </section>
+        <footer class="footer">
+            <h2>FOOTER</h2>
+        </footer>
+        <div class="box">
+            <h2>BOX</h2>
+        </div>
+        <div>
+            <h2>BOX-DENEME</h2>
+        </div>
+    </div>
+</body>
+</html>

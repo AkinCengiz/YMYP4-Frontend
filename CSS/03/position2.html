@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .relative{
+            position: relative;
+        }
+        .outbox{
+            background-color: grey;
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+        }
+        .inbox{
+            background-color: green;
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            position: relative;
+            left:30px;
+            top: 20px;
+        }
+        .inbox2{
+            background-color: red;
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            position: absolute;
+            right:30px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outbox relative">
+        <div class="inbox">
+
+        </div>
+    </div>
+    <div class="outbox relative">
+        <div class="inbox2">
+
+        </div>
+    </div>
+</body>
+</html>

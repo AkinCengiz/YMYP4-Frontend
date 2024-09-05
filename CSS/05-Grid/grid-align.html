@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Grid Container</title>
+    <style>
+        body{
+            background-color: #444;
+
+        }
+        .container{
+           display: grid;
+           height: 700px;
+           /* grid-template-columns: repeat(4,1fr); */
+           grid-template-columns: repeat(3,1fr);
+           background-color: black;
+            gap: 10px;
+            justify-content: start;
+            /* justify-content: start;
+            justify-content: end;
+            justify-content: center; */
+            
+            /* align-items: start; */
+            /* align-items: center; */
+            /* align-items: end; */
+            align-items: stretch;
+
+        }
+        .box{
+            border: 1px solid silver;
+            background-color: red;
+            padding: 20px;
+            /* margin: 20px; */
+            font-size: 25px;
+            text-align:center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>  
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>  
+        <div class="box" id="box6">6</div>
+        <div class="box" id="box7">7</div>
+        <div class="box" id="box8">8</div>
+        <div class="box" id="box9">9</div>
+    </div>
+</body>
+</html>

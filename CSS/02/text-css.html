@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Özellikleri</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* Yorum satırı 
+        
+        sdfsdfdsf
+        dsfsdf
+        dfsfsd
+        dsfsdfds
+        
+        
+        */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #FF6347;
+        }
+        h1{
+            /* Yazı Rengi */
+            color: green;
+            /* Metni Hizala */
+            /* Ortaya Hizalama center, sola hizalama left, sağa hizalama right */
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            text-shadow: 10px 10px 2px gray;
+        }
+        #title{
+            text-align: left;
+            letter-spacing: 5px;
+            word-spacing: 15px;
+            /* Metnin underline -> altına, overline -> metnin  üstüne, line-through -> metnin üzerine çizgi çizer */
+            text-decoration: line-through;
+            font-family: Arial, Helvetica, sans-serif;
+            /* Yazı formunu belirleme
+            text-transform : lowercase (bütün harfleri küçük yapar)
+            text-transform : uppercase (bütün harfleri büyük yapar)
+            text-transform : capitalize (Her kelimenin ilk harfini büyük yapar)
+            */
+            text-transform: lowercase;
+            text-transform: capitalize;
+        }
+        span{
+            text-decoration: underline;
+            /* Font kalınlığı belirlemek için font-weight kullanılır */
+            font-weight: 700;
+        }
+        p{
+            margin: 5px;
+            padding: 5px;
+            text-align: justify;
+            /* Fontun büyüklüğünü belirler */
+            font-size: 30px;
+
+            /* Yazı fontunu ayarlama */
+            font-family: Arial, Helvetica, sans-serif;
+
+            /* Paragraf başlangıç girintisini ayarlar */
+            text-indent: 35px;
+            
+        }
+        #p-height{
+            line-height: 60px;
+        }
+        h1.bg-primary{
+            background-color: blue;
+        }
+        .bg-primary{
+            background-color: gray;
+        }
+        p,span, li, a{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>CSS Text Özellikleri</h1>
+        <h1 id="title" class="bg-primary">CSS Text Özellikleri</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt expedita veniam accusamus dolorum quam enim laborum, laudantium tempore eos labore, ut in! Suscipit, nobis nihil voluptas nesciunt inventore labore veniam soluta ipsa sapiente rerum itaque aliquam quas at facere, illo magni adipisci quisquam exercitationem sint, a vel. Veniam accusamus repudiandae repellendus, at assumenda vero a doloribus. Blanditiis, reprehenderit. Doloribus dolores, impedit voluptas consequuntur odio saepe voluptates optio molestiae! Nam ipsum, quo similique eaque neque fuga, magnam voluptate, vero eius hic blanditiis magni dolorum obcaecati. <span>Officia dolores</span> tenetur voluptate id, libero magni iure atque officiis molestiae, cumque odit nisi, tempora ex consequatur quam. Officiis dolores exercitationem et totam quam? Eveniet, tempora. Recusandae officiis maxime velit nesciunt eligendi, impedit maiores id. Fuga quia voluptatum velit sit. Repellat corrupti aliquam magnam, tempora sed quae adipisci molestiae eius atque minus rerum dolores, earum soluta quibusdam perferendis? Quisquam eum sint dicta accusantium non vero!</p>
+        <p id="p-height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt expedita veniam accusamus dolorum quam enim laborum, laudantium tempore eos labore, ut in! Suscipit, nobis nihil voluptas nesciunt inventore labore veniam soluta ipsa sapiente rerum itaque aliquam quas at facere, illo magni adipisci quisquam exercitationem sint, a vel. Veniam accusamus repudiandae repellendus, at assumenda vero a doloribus. Blanditiis, reprehenderit. Doloribus dolores, impedit voluptas consequuntur odio saepe voluptates optio molestiae! Nam ipsum, quo similique eaque neque fuga, magnam voluptate, vero eius hic blanditiis magni dolorum obcaecati. <span>Officia dolores</span> tenetur voluptate id, libero magni iure atque officiis molestiae, cumque odit nisi, tempora ex consequatur quam. Officiis dolores exercitationem et totam quam? Eveniet, tempora. Recusandae officiis maxime velit nesciunt eligendi, impedit maiores id. Fuga quia voluptatum velit sit. Repellat corrupti aliquam magnam, tempora sed quae adipisci molestiae eius atque minus rerum dolores, earum soluta quibusdam perferendis? Quisquam eum sint dicta accusantium non vero!</p>
+        <p class="bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium inventore soluta nesciunt nemo facilis sit! Itaque inventore ab ipsam impedit sed quod natus beatae? Dolorem eveniet iusto consequatur accusantium eum atque consequuntur. Illum voluptate laborum est adipisci magnam numquam, commodi laboriosam exercitationem placeat iure recusandae explicabo facere provident dolorum nihil ex fugiat quae quod officia optio nobis, consectetur blanditiis tempore. Iusto ut ea facere accusantium suscipit, sequi reiciendis quis quibusdam fugit quo tenetur cumque ipsam. Dolor quos ex tempore illo fugit aspernatur sapiente ullam! Unde, sed consequuntur porro exercitationem impedit earum, quaerat deserunt explicabo aut modi nulla atque, similique ratione!</p>
+        <p class="bg-primary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus maxime non fugit laudantium! Quod libero consectetur corrupti voluptates omnis et excepturi consequatur ipsam reprehenderit temporibus, facere ullam quas suscipit natus optio. Voluptatem, quo nulla, praesentium laudantium delectus repellat culpa recusandae impedit distinctio maxime cumque possimus explicabo nesciunt pariatur. Provident, molestias.</p>
+    </div>
+</body>
+</html>

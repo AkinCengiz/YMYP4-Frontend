@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Global & Local Variables</title>
+</head>
+<body>
+
+
+    <script>
+        let name = "Akın";//Global Değişken bütün her yerden kullanılabilir
+
+        function deneme(){
+           let name = "Cengiz"; //Local değişken 
+           var phone = "123-456-78-90"
+           console.log(name + " " + phone); 
+        }
+        deneme();
+        console.log(name);
+        //console.log(phone);
+
+    </script>
+</body>
+</html>

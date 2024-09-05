@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Grid Container</title>
+    <style>
+        body{
+            background-color: #444;
+
+        }
+        .container{
+            /* display: grid; */
+            display: inline-grid;
+        }
+        .box{
+            border: 1px solid silver;
+            background-color: red;
+            padding: 20px;
+            margin: 20px;
+            font-size: 25px;
+            display: inline-block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>  
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">1</div>  
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Number Variable</title>
+</head>
+<body>
+    
+
+    <script>
+        /*
+        DEĞİŞKEN İSİMLENDİRME KURALLARI
+        1- Türkçe karakter kullanmayınız.
+        2- Değişken isimleri sayı ile başlayamaz ama sayı ile devam edebilir ya da bitebilir
+            1number -> Hatalı
+            number1 -> Hata Yok
+            num1ber -> Hata Yok
+        3-Değişken isimleri birden fazla kelimeden oluşsa bile araya boşluk konulmaz
+            First Name -> Hatalı
+            FirstName -> Hata Yok
+        4-Değişken isimlerinde özel karakterler kullanılmaz (/*+?=%&)
+        5-Değişken isimleri $ sembolü ile başlayabilir.
+
+        İSİMLENDİRME TÜRLERİ (YAZIM STİLLERİ)
+        1-Kebap-Case => Değişken ismi birden fazla kelimeden oluşuyorsa kelimelerin arasına - işareti konularak yapılan isimlendirme stilidir.
+            first-name, last-name, name,  -D-B-E-P-E---------------
+        2-camelCase => Değişken ismi birden fazla kelimeden oluşuyorsa ilk kelimenin bütün harfleri küçük diğer kelimelerin ilk harfleri büyük olacak şekilde yapılan isimlendirme stilidir.
+            firstName, lastName, name, fullName, identityNumber vb.
+        3-PascalCase => Değişken ismi birden fazla kelimeden oluşuyorsa her kelimenin ilk harfleri büyük olacak şekilde yapılan isimlendirme stilidir.
+            FirstName, LastName, Name, FullName vb.
+        4-snake_case => Değişken ismi birden fazla kelimeden oluşuyorsa her kelimenin arasına alt çizgi _ işareti konularak şekilde yapılan isimlendirme stilidir.
+            first_name, last_name, name, full_name
+
+        SABİTLER - CONST İSİMLENDİRME KURALLARI
+        1-Sabitler için bütün değişken isimlendirme kuralları geçerlidir. Ancak sabitlerin bütün karakterleri büyük harfle verilir.
+            const PI = 3.14; 
+        
+        
+        
+        
+        
+        
+        
+        */
+
+
+
+        var number1 = 10;
+        console.log(number1);
+        console.log(typeof number1);
+
+
+        const PI = 3.14;
+        console.log("PI Sabiti : " + PI);
+        //PI = 7.75;
+        //console.log(PI);
+        const NUMBERS = [1,2,3,4,5];//F3DE29
+        console.log(NUMBERS);
+        NUMBERS.push(9);
+        //NUMBERS = [1,2,3,4,5,6];//F3DEFF
+        console.log(NUMBERS);
+
+        
+
+    </script>
+</body>
+</html>

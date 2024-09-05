@@ -1,0 +1,229 @@
+:root{
+    --white:#fff;
+    --primary:#007bff;
+    --secondary:#6c757d;
+    --success:#28a745;
+    --danger:#dc3545;
+    --warning:#ffc107;
+    --info:#17a2b8;
+    --dark:#343a40;
+    --light:#
+}
+
+
+/* ============ TEXT STYLE ============ */
+
+/* ---------- Text Align ---------*/
+.text-center{
+    text-align: center;
+}
+.text-justify{
+    text-align: justify;
+}
+
+/* ---------- Text Color ---------- */
+.text-primary{
+    color: var(--primary);
+}
+.text-secondary{
+    color: var(--secondary);
+}
+.text-white{
+    color: var(--white);
+}
+.text-success{
+    color: var(--success);
+}
+.text-danger{
+    color: var(--danger);
+}
+.text-warning{
+    color: var(--warning);
+}
+.text-info{
+    color: var(--info);
+}
+.text-dark{
+    color: var(--dark);
+}
+.text-light{
+    color: var(--light);
+}
+
+
+
+
+
+/* ============ BACKGROUND STYLE ============ */
+
+.bg-primary{
+    background-color: var(--primary);
+}
+.bg-secondary{
+    background-color: var(--secondary);
+}
+.bg-white{
+    background-color: var(--white);
+}
+.bg-success{
+    background-color: var(--success);
+}
+.bg-danger{
+    background-color: var(--danger);
+}
+.bg-warning{
+    background-color: var(--warning);
+}
+.bg-info{
+    background-color: var(--info);
+}
+.bg-dark{
+    background-color: var(--dark);
+}
+.bg-light{
+    background-color: var(--light);
+}
+
+
+/* ============ BUTTONS STYLE ============ */
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
+
+/* ---------- Buttons Colors ---------- */
+
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--white);
+}
+.btn-secondary{
+    background-color: var(--secondary);
+    color: var(--white);
+}
+.btn-white{
+    background-color: var(--white);
+    color: var(--dark);
+}
+.btn-success{
+    background-color: var(--success);
+    color: var(--white);
+}
+.btn-danger{
+    background-color: var(--danger);
+    color: var(--white);
+}
+.btn-warning{
+    background-color: var(--warning);
+    color: var(--white);
+}
+.btn-info{
+    background-color: var(--info);
+    color: var(--white);
+}
+.btn-dark{
+    background-color: var(--dark);
+    color: var(--white);
+}
+.btn-light{
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.btn-outline-primary{
+    background : transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.btn-outline-primary:hover{
+    background-color: var(--primary);
+    color: var(--white);
+    border: 1px solid var(--primary);
+}
+.btn-outline-secondary{
+    background : transparent;
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+.btn-outline-secondary:hover{
+    background-color: var(--secondary);
+    color: var(--white);
+    border: 1px solid var(--secondary);
+}
+.btn-outline-danger{
+    background : transparent;
+    color: var(--danger);
+    border: 1px solid var(--danger);
+}
+.btn-outline-danger:hover{
+    background-color: var(--danger);
+    color: var(--white);
+    border: 1px solid var(--danger);
+}
+.btn-outline-warning{
+    background : transparent;
+    color: var(--warning);
+    border: 1px solid var(--warning);
+}
+.btn-outline-warning:hover{
+    background-color: var(--warning);
+    color: var(--white);
+    border: 1px solid var(--warning);
+}
+.btn-outline-info{
+    background : transparent;
+    color: var(--info);
+    border: 1px solid var(--info);
+}
+.btn-outline-info:hover{
+    background-color: var(--info);
+    color: var(--white);
+    border: 1px solid var(--info);
+}
+.btn-outline-dark{
+    background : transparent;
+    color: var(--dark);
+    border: 1px solid var(--dark);
+}
+.btn-outline-dark:hover{
+    background-color: var(--dark);
+    color: var(--white);
+    border: 1px solid var(--dark);
+}
+.btn-outline-light{
+    background-color: var(--dark);
+    color: var(--light);
+    border: 1px solid var(--light);
+}
+.btn-outline-light:hover{
+    background-color: var(--light);
+    color: var(--dark);
+    border: 1px solid var(--light);
+}
+.btn-outline-success{
+    background : transparent;
+    color: var(--success);
+    border: 1px solid var(--success);
+}
+.btn-outline-success:hover{
+    background-color: var(--success);
+    color: var(--white);
+    border: 1px solid var(--success);
+}
+
+
+
+/* ============ FLEX ============ */
+
+/* ---------- Flex Items ---------- */
+
+
+/* ---------- Flex Grid ---------- */

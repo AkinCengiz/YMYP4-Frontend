@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Flexbox</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            background-color: aqua;
+            display: flex;
+            flex-direction: row-reverse;
+            height: 300px;
+            flex-wrap: wrap-reverse;
+            justify-content: space-between;
+            align-content:start;
+        }
+        .box{
+            width: 125px;
+            height: 125px;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+        .grey{
+            background-color: grey;
+        }
+        .blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red">
+            <h1>DIV 1</h1>
+        </div>
+        <div class="box green">1</div>
+        <div class="box grey"></div>
+        <div class="box blue">2</div>
+        <div class="box red"></div>
+        <div class="box grey"></div>
+        <div class="box blue"></div>
+        <!-- <div class="box grey"></div> -->
+    </div>
+</body>
+</html>

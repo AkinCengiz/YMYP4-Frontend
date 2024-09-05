@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form elementleri</title>
+  </head>
+  <body>
+    <form action="#">
+      <label for="firstname">Name</label><br>
+      <input type="text" id="firstname" name="firstname" placeholder="İsminiz..." /><br>
+      <label for="surname">Surname</label><br>
+      <input type="text" name="surname" id="surname" placeholder="Soyisminiz" /><br>
+      <label for="email">Email</label><br>
+      <input type="email" name="email" id="email" /><br>
+      <label for="password">Password</label><br>
+      <input type="password" name="password" id="password" /><br>
+      <label for="rng">Range</label><br>
+      <input type="range" name="rng" id="rng" value="10" /><br>
+      <label for="birthdate">Doğum Tarihi</label><br>
+      <input type="date" name="birthdate" id="birthdate"><br>
+      <label for="now">Tarihi</label><br>
+      <input type="datetime-local" name="now" id="now"><br>
+      <label for="gender">Cinsiyet</label>
+      <input type="radio" name="gender" id="woman" checked>Kadın
+      <input type="radio" name="gender" id="man"> Erkek <br>
+      <label for="education">Eğitim Durumu</label><br>
+      <input type="radio" name="education" id="ilkokul" checked>İlkokul <br>
+      <input type="radio" name="education"  id="ortaokul" >Ortaokul <br>
+      <input type="radio" name="education"  id="lise" >Lise <br>
+      <input type="radio" name="education"  id="universite" >Üniversite <br>
+      <label for="hobbies">Hobiler</label><br>
+        <input type="checkbox" name="hobbies" id="futbol">Futbol <br>
+        <input type="checkbox" name="hobbies" id="basketbol">Basketbol <br>
+        <input type="checkbox" name="hobbies" id="voleybol">Voleybol <br>
+        <input type="checkbox" name="hobbies" id="yuzme">Yüzme <br>
+        <input type="checkbox" name="hobbies" id="koşu">Koşu <br>
+        <input type="checkbox" name="hobbies" id="yürüyüş">Yürüyüş <br>
+
+        <label for="city">Şehir</label><br>
+        <select name="city" id="city">
+            <option value="34">İstanbul</option>
+            <option value="06">Ankara</option>
+            <option value="35">İzmir</option>
+            <option value="07">Antalya</option>
+            <option value="16">Bursa</option>
+        </select><br>
+        <textarea name="message" id="message" cols="100" rows="5" placeholder="Mesajınızı giriniz..."></textarea>
+      <br><input type="submit" name="" id="" /><br>
+    </form>
+  </body>
+</html>

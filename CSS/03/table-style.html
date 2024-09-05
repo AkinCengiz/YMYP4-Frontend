@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Tables</title>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid silver;
+        border-collapse: collapse;
+      }
+      table{
+        width: 80%;
+        margin: 0 auto;
+      }
+      thead tr {
+        background-color: blue;
+        color: white;
+      }
+      /* tbody tr:nth-child(2n){
+        background-color: #ed9a9a;
+      }
+      tbody tr:nth-child(2n+1) {
+        background-color: #aaa;
+      } */
+       tbody tr:nth-child(3n){
+        background-color: #aaa;
+       }
+      th,td{
+        padding: 10px;
+      }
+      tbody tr{
+        text-align: center;
+      }
+      tbody tr:hover{
+        background-color: black;
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- <table>
+      <tr>
+        <td>Sıra</td>
+        <td>Ad</td>
+        <td>Soyad</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Akın</td>
+        <td>Cengiz</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Menderes</td>
+        <td>Duman</td>
+      </tr>
+    </table> -->
+    <table>
+      <thead>
+        <tr>
+          <th>Sıra</th>
+          <th>Ad</th>
+          <th>Soyad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Akın</td>
+          <td>Cengiz</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Menderes</td>
+          <td>Duman</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Fırat</td>
+            <td>Kılıç</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Abdullah</td>
+            <td>Aksu</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Hidayet</td>
+            <td>Alperen</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Mihriban</td>
+            <td>Şimşek</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Tuğba</td>
+            <td>Tuna</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Mustafa</td>
+            <td>Tuğrul</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Recep</td>
+            <td>Altun</td>
+          </tr>
+      </tbody>
+    </table>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <div class="box">
+        <h1 id="title"></h1>
+        <p></p>
+        <p></p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <div></div>
+    </table>
+
+  </body>
+</html>

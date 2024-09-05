@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Flex</title>
+    <style>
+        .container{
+            width: 80%;
+            height: 150px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            align-items: flex-end;
+        }
+        .bg-primary{
+            background-color: blue;
+        }
+        .bg-red{
+            background-color: red;
+        }
+        .box{
+            width: 50px;
+            /* height: 50px; */
+            background-color: gray;
+            border: 2px solid black;
+        }
+        .row{
+            width: 60%;
+            height: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            background-color: yellow;
+            justify-content: space-between;
+        }
+        .box2{
+            width: 50px;
+            
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg-red">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+    </div>
+    <div class="container bg-primary">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="row">
+        <div class="box2">1</div>
+        <div class="box2">2</div>
+        <div class="box2">3</div>
+        <div class="box2">4</div>
+        <div class="box2">5</div>
+        <div class="box2">6</div>
+        <div class="box2">7</div>
+        <div class="box2">8</div>
+    </div>
+</body>
+</html>

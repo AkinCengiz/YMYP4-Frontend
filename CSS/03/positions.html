@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 2000px;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+        .fixed{
+            position: fixed;
+            bottom:0;
+            right: 50px;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .container{
+            width: 400px;
+            height: 400px;
+            background-color: grey;
+            position: relative;
+            top: 20px;
+            left: 80px;
+        }
+        .internal{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .box{
+            width: 80px;
+            height: 80px;
+            border: 1px solid black;
+        }
+
+        .z-index{
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 500px; height: 500px; background-color: aqua; position: relative; top: 10px;left: 10px;">
+        <div class="container">
+            <div class="internal yellow"></div>
+        </div>
+    </div>
+    <div class="container z-index">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="blue fixed"></div>
+
+</body>
+</html>

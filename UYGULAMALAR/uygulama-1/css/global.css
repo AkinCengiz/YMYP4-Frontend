@@ -1,0 +1,143 @@
+/* 
+sarı #FED136
+
+koyu : #212529
+
+*/
+:root{
+    --primary:#212529;
+    --secondary:#FED136;
+    --danger:#dc3545;
+    --info:#17a2b8;
+    --success:#28a745;
+    --white:#fff;
+    --dark:#343a40;
+}
+
+/* TEXT CSS */
+.text-center{
+    text-align: center;
+}
+
+/* Text Colors */
+.text-primary{
+    color: var(--primary);
+}
+.text-secondary{
+    color: var(--secondary);
+}
+.text-success{
+    color: var(--success);
+}
+.text-danger{
+    color: var(--danger);
+}
+.text-info{
+    color: var(--info);
+}
+.text-dark{
+    color: var(--dark);
+}
+.text-white{
+    color: var(--white);
+}
+.text-grey{
+    color: #666;
+}
+
+
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* ===== BUTTONS CSS ===== */
+.btn{
+    padding: 1rem;
+    border-radius: 5px;
+}
+.btn-circle{
+    padding: 1rem;
+    border-radius: 50%;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+
+/* -Button Colors */
+.btn-primary{
+    background-color: var(--primary);
+    color:var(--white);
+    border: 1px solid var(--primary);
+}
+.btn-secondary{
+    background-color: var(--secondary);
+    color:var(--white);
+    border: 1px solid var(--secondary);
+}
+.btn-danger{
+    background-color: var(--danger);
+    color:var(--white);
+    border: 1px solid var(--danger);
+}
+.btn-success{
+    background-color: var(--success);
+    color:var(--white);
+    border: 1px solid var(--success);
+}
+.btn-info{
+    background-color: var(--info);
+    color:var(--white);
+    border: 1px solid var(--info);
+}
+.btn-dark{
+    background-color: var(--dark);
+    color:var(--white);
+    border: 1px solid var(--dark);
+}
+.btn-outline-primary{
+    background-color: var(--white);
+    color:var(--primary);
+    border: 1px solid var(--primary);
+}
+.btn-outline-secondary{
+    background:transparent;
+    color:var(--secondary);
+    border: 1px solid var(--secondary);
+}
+.btn-outline-secondary:hover{
+    background-color: var(--secondary);
+    color:var(--white);
+    border: 1px solid var(--secondary);
+}
+
+
+
+
+/* BORDERS */
+
+.border{
+    border: 1px solid;
+}
+.border-primary{
+    border-color: var(--primary);
+}
+.border-danger{
+    border-color: var(--danger);
+}
+
+
+/* MARGINS & PADDINGS */
+.m-1{
+    margin: 1rem;
+}
+.m-05{
+    margin: 0.5rem;
+}
+
+.p-1{
+    padding: 1rem;
+}

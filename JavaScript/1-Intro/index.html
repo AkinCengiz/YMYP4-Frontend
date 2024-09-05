@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Intro</title>
+</head>
+<body>
+    <h1 id="title">Merhaba</h1>
+
+  <script>
+    var name = "Akın";
+    console.log(name);
+    console.log("JS Intro")
+    var h1 = document.getElementById("title");
+    h1.innerText += " " + name;
+    h1.innerText = "Silindi";
+    name = "Cengiz";
+    console.log(name);
+    name += " Akın";
+    console.log(name);
+  </script>
+  <script src="index.js"></script> 
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script> 
+</body>
+</html>

@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*------ GLOBAL CLASSES--------------*/
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.text-primary{
+    color:#034f84
+}
+
+.text-ligth{
+    color: #fff;
+}
+
+.bg-primary{
+    background-color: #034f84;
+}
+
+.bg-ligth{
+    background-color: #fff;
+}
+.btn{
+    padding: .75rem;
+    margin: 0.5rem -0.75rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: #034f84;
+    color: #fff;
+}
+.btn-primary:hover{
+    background-color: #fff;
+    color: #034f84;
+    border: 1px solid #034f84;
+}
+.btn-light{
+    background-color: #fff;
+    color: #034f84;
+}
+.btn-light:hover{
+    background-color: #034f84;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.order-reverse{
+    flex-direction: row-reverse;
+}
+
+.heading-small{
+    font-size: 1.25rem;
+}
+.heading-medium{
+    font-size: 1.5rem;
+}
+.heading-large{
+    font-size: 2rem;
+}
+.m-5{
+    margin: 150px;
+}
+.border{
+    border: 5px solid red;
+}
+
+/*-------------HEADER-------------------*/
+header{
+    width: 100%;
+    background-color: #034f84;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+}
+.navbar h1{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 0.2rem;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.25rem;
+    align-items: center;
+}
+.navbar ul li{
+    /* margin: 0.15rem; */
+    padding: 0.5rem;
+    border-radius: 5px;    
+}
+
+.navbar ul li:hover{
+    background-color: #335f84;
+}
+
+/*------------ABOUT---------------*/
+#about{
+    margin: 4rem auto;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #034f84;
+    padding: 0.2rem;
+    border-bottom: 1px solid black;
+}
+.about h2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.about img{
+    border-radius: 50%;
+}
+.about h3{
+    font-size: 1.25rem;
+    letter-spacing: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.about p{
+    margin-bottom: 1rem;
+}
+
+/*-----------BLOGS----------------*/
+.blogs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blogs h2{
+    margin-top: 2rem;
+}
+.blogs .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.blog{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.blog:hover{
+    background-color: #335f84;
+}
+.blog-img{
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;  
+}
+.blog-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+.blog-img span{
+    background-color: red;
+    border-radius: 5px;
+    padding: 0.2rem;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4rem;
+
+}
+
+.blog h3{
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.blog p{
+    margin-bottom: 1rem;
+}
+
+/*---------------EXPERIENCES-------------*/
+.experiences{
+    padding: 2rem 0;
+}
+.experience{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.experience .experience-image{
+    position: relative;
+    /* padding: 0.75rem; */
+    margin: 0.75rem;
+    width: 30%;
+}
+.experience-image img{
+    width: 100%;
+    border-radius: 5px;
+}
+.experience-image span{
+    position: absolute;
+    padding: 0.75rem;
+    background-color: #034f84;
+    color: #fff;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 5px;
+}
+.experience-title{
+    width: 15%;
+    margin: 0.75rem;
+}
+.experience-description{
+    width: 55%;
+    margin: 0.75rem;
+}
+
+.experience-description .experience-text{
+    text-align: justify;
+}
+
+/*-----------FOOTER------------------*/
+#footer{
+    width: 100%;
+    /* background-color: #034f84; */
+}
+#footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+.social-accounts{
+    display: flex;
+    align-items: center;
+}
+.social-accounts i{
+    padding: 0.75rem;
+    font-size: 2.5rem;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+}
+.contact h4{
+    margin-bottom: 0.25rem;
+    border-bottom:1px solid #fff;
+}
+.contact p{
+    margin-bottom: 0.5rem;
+}
