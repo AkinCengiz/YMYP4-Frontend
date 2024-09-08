@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="./main.css">
 
     <style>
-        .tags .w3-tag{
-            display: inline-block;
-        }
+      .bell{
+        position: relative;
+      }
+      .bell .badge{
+        position: absolute;
+        top: 5px;
+        right: -5px;
+      }
     </style>
 </head>
 <body>
@@ -24,7 +29,7 @@
                 <li class="nav-item"><a href="#" class="nav-link p-3"><i class="fa-solid fa-globe"></i></a></i></li>
                 <li class="nav-item"><a href="#" class="nav-link p-3"><i class="fa-solid fa-user"></i></a></li>
                 <li class="nav-item"><a href="#" class="nav-link p-3"><i class="fa-solid fa-envelope"></i></a></li>
-                <li class="nav-item"><a href="#" class="nav-link p-3"><i class="fa-solid fa-bell"></i></a></li>
+                <li class="nav-item bell"><a href="#" class="nav-link p-3"><i class="fa-solid fa-bell"></i></a><span class="badge text-bg-danger">5</span></li>
             </ul>
             <div id="profile-img">
                 <img src="https://i.pravatar.cc/40?u=fake@pravatar.com" alt="">
@@ -59,12 +64,100 @@
                     <span class="w3-tag w3-small bg-secondary p-1 my-1">Food</span>
                     <span class="w3-tag w3-small bg-secondary p-1 my-1">Desing</span>
                 </div>
+                <div class="alert-box bg-secondary p-1">
+                    <p id="alert-title" class="m-2">Hey!</p>
+                    <p id="alert-text" class="m-2">People are looking at your profile. Find out who.</p>
+                    <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+                </div>
             </div>
-            <div class="col-md-7"></div>
-            <div class="col-m-2"></div>
+            <div class="col-md-7">
+                <div class="post-box">
+                    <h6 class="post-title">Social Media template by w3.css</h6>
+                    <p contenteditable="true" class="post-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, nulla.</p>
+                    <button class="btn btn-secondary"><i class="fa-solid fa-pen me-2"></i>Post</button>
+                </div>
+                <div class="post-box">
+                    <div class="post-header">
+                        <img class="avatar" src="./img/avatar2.png" alt="">
+                        <h4 class="post-title">John Doe</h4>
+                        <span>1 min</span>
+                    </div>
+                    <hr>
+                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="post-images px-2 row">
+                        <div class="img-box col-6">
+                            <img class="" src="./img/lights.jpg" alt="">
+                        </div>
+                        <div class="img-box col-6">
+                            <img src="./img/nature.jpg" alt="">
+                        </div>                        
+                    </div>
+                    <button class="btn btn-secondary my-1"><i class="fa fa-thumbs-up ms-0 me-2"></i>Like</button>
+                    <button class="btn btn-secondary my-1"><i class="fa fa-comment me-2"></i>Comment</button>
+                </div>
+                <div class="post-box">
+                    <div class="post-header">
+                        <img class="avatar" src="./img/avatar5.png" alt="">
+                        <h4 class="post-title">Jane Doe</h4>
+                        <span>1 min</span>
+                    </div>
+                    <hr>
+                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button class="btn btn-secondary my-1"><i class="fa fa-thumbs-up ms-0 me-2"></i>Like</button>
+                    <button class="btn btn-secondary my-1"><i class="fa fa-comment me-2"></i>Comment</button>
+                </div>
+                <div class="post-box">
+                    <div class="post-header">
+                        <img class="avatar" src="./img/avatar6.png" alt="">
+                        <h4 class="post-title">Angie Jane</h4>
+                        <span>1 min</span>
+                    </div>
+                    <hr>
+                    <p class="post-description">Have you seen this?</p>
+                    <div class="post-images px-2 row">
+                        <div class="img-box col-12">
+                            <img src="./img/nature.jpg" alt="">
+                        </div>                        
+                    </div>
+                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button class="btn btn-secondary my-1"><i class="fa fa-thumbs-up ms-0 me-2"></i>Like</button>
+                    <button class="btn btn-secondary my-1"><i class="fa fa-comment me-2"></i>Comment</button>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="event-card p-3">
+                    <p class="card-sup-title">Upcoming Events:</p>
+                    <div class="img-box">
+                        <img src="./img/forest.jpg" alt="">
+                    </div>
+                    
+                    <p class="card-title"><strong>Holiday</strong></p>
+                    <p class="card-text">Friday 15:00</p>
+                    <button class="btn btn-secondary btn-block" type="button">Info</button>               
+                </div>
+                <div class="event-card p-3">
+                    <p class="card-sup-title">Friend Request</p>
+                    <div class="avatar-box row">
+                        <img src="./img/avatar6.png" class="col-8 mx-auto" alt="">
+                    </div>
+                    <p class="card-text">Jane Doe</p>
+                    <div class="btn-group">
+                        <button class="btn btn-success btn-block" type="button"><i class="fa fa-check"></i></button>
+                        <button class="btn btn-danger btn-block" type="button"><i class="fa fa-remove"></i></button>
+                    </div>
+                                   
+                </div>
+                <div class="event-card p-3">
+                    <p style="margin-bottom: 0;">ADS</p>
+                </div>
+                <div class="event-card p-3">
+                    <p style="margin-bottom: 0;"><i class="fa fa-bug w3-xxlarge"></i></p>
+                </div>
+            </div>
         </div>
     </div>
-
+    <footer class="container-fluid footer">FOOTER</footer>
+    <footer class="sub-footer">Powered by w3.css</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
