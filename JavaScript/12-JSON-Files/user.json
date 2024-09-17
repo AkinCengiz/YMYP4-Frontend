@@ -1,0 +1,17 @@
+{
+    "users" : [
+        {"name":"İsim1","lastname":"Soyisim1"},
+        {"name":"İsim2","lastname":"Soyisim2"},
+        {"name":"İsim3","lastname":"Soyisim3"},
+        {"name":"İsim4","lastname":"Soyisim4"}
+
+    ],
+    "language" : "İngilizce",
+    "Email" : "asd@zxc.com",
+    "address" : {
+        "city" : "İstanbul",
+        "town" : "Eyüp",
+        "district" : "Göktürk",
+        "buildNumber" : "8"
+    }
+}
