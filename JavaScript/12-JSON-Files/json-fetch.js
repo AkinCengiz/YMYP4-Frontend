@@ -17,7 +17,7 @@ fetch("https://northwind.vercel.app/api/products").then(response => response.jso
      const postlist = document.querySelector("#post-list");
      data.forEach(post => {
         const liElement = document.createElement("li");
-        liElement.textContent = `${post.name}`;
+        liElement.textContent = `${post.name} ${post.categories}`;
         postlist.appendChild(liElement);
      });
     });
