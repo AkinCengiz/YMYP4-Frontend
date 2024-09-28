@@ -1,0 +1,40 @@
+{
+    "skills" :[
+        {
+            "title" : "HTML",
+            "ratio" : 50
+        },
+        {
+            "title" : "CSS",
+            "ratio" : 86
+        },
+        {
+            "title" : "BootStrap",
+            "ratio" : 35
+        },
+        {
+            "title" : "JavaScript",
+            "ratio" : 98
+        },
+        {
+            "title" : "React JS",
+            "ratio" : 98
+        },
+        {
+            "title" : "CSS",
+            "ratio" : 86
+        },
+        {
+            "title" : "BootStrap",
+            "ratio" : 35
+        },
+        {
+            "title" : "JavaScript",
+            "ratio" : 98
+        },
+        {
+            "title" : "React JS",
+            "ratio" : 98
+        }
+    ]
+}

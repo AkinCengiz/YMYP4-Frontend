@@ -1,0 +1,9 @@
+{
+    "email" : "info@asd.com",
+    "phone" : "1234567890",
+    "address" : {
+        "city" : "İstanbul",
+        "town" : "Eyüp",
+        "district" : "Göktürk"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "portfolios" : [
+        {
+            "images" : "./images/mountains.jpg",
+            "title" : "Montains",
+            "description" : "Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."
+        },
+        {
+            "images" : "./images/lights.jpg",
+            "title" : "North Lights",
+            "description" : "Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."
+        },
+        {
+            "images" : "./images/nature.jpg",
+            "title" : "Başlık 3",
+            "description" : "Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."
+        },
+        {
+            "images" : "./images/p1.jpg",
+            "title" : "Başlık 4",
+            "description" : "Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."
+        },
+        {
+            "images" : "./images/p2.jpg",
+            "title" : "Başlık 5",
+            "description" : "Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."
+        },
+        {
+            "images" : "./images/p3.jpg",
+            "title" : "Başlık 6",
+            "description" : "Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "firstname" : "Akın",
+    "lastname" : "Cengiz",
+    "email" : "akincengiz@msn.com",
+    "about" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error rerum ipsum nobis, tempora molestiae nisi ipsam iste necessitatibus minus ducimus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error rerum ipsum nobis, tempora molestiae nisi ipsam iste necessitatibus minus ducimus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error rerum ipsum nobis, tempora molestiae nisi ipsam iste necessitatibus minus ducimus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error rerum ipsum nobis, tempora molestiae nisi ipsam iste necessitatibus minus ducimus!",
+    "images" :["./images/avatar_g.jpg","./images/me2.jpg"]
+}
