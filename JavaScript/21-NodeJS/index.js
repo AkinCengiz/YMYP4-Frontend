@@ -18,6 +18,7 @@ const categories = [
 const app = express();
 const port = 8080;
 //GET 
+///localhost:8080/api/p
 app.get("/products",(request,response) => {
     response.json(products);
 });
