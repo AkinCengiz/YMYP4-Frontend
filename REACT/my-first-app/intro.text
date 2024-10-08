@@ -1,0 +1,20 @@
+<button class="btn btn-primary">Kaydet</button> => HTML 
+
+
+JAVASCRIPT HTML ELEMENT OLUŞTURMA
+const button = `<button class="btn btn-primary">Kaydet</button>`;
+
+JSX FORMATI İLE ELEMENT OLUŞTURMA
+<button className="btn btn-primary">Kaydet</button>
+
+JAVASCRIPT ELEMENT OLUŞTURMA
+const div = document.createElement("div");
+
+REACT İLE ELEMENT OLUŞTURMA
+React.createElement("button",{className="btn"},"Kaydet");
+
+<p> 15 x 5 = {15*5}</p>
+
+
+ONE WAY BINDING
+

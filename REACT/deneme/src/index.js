@@ -7,16 +7,11 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <h1>Header</h1>
+    <section>Buraya Section Gelecek</section>
     <App />
-    <h1 className='baslik'>CONTENT {2+2}</h1>
-    <App />
-    <h1>FOOTER</h1>
+    <h1>Buraya Component Gelecek</h1>
   </React.StrictMode>
-  // <>
-  //   <h1>Akın CENGİZ</h1>
-  //   <p>YMYP 4</p>
-  // </>
-  
 );
 
 // If you want to start measuring performance in your app, pass a function
