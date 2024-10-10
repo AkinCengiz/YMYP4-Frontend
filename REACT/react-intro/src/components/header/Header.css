@@ -1,0 +1,11 @@
+.header{
+    background-color: blue;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    border: 10px solid silver;
+}
+.title, .content{
+    padding: 10px;
+    font-size: 30px;
+}
