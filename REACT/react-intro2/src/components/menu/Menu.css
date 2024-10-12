@@ -1,0 +1,24 @@
+.Menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e8e8e8;
+}
+.Menu-Logo{
+    font-size: 36px;
+    color: darkblue;
+    font-weight: bolder;
+}
+.Menu-Text{
+    color: darkblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Menu-Nav{
+    display: flex;
+    list-style-type: none;
+}
+.Menu-Nav li{
+    padding: 20px;
+}
