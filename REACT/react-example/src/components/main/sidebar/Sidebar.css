@@ -1,0 +1,14 @@
+.Sidebar{
+    background-color: #d8d8d8;
+    text-align: left;
+    padding: 10px;
+}
+
+.Sidebar-List{
+    list-style-type: none;
+    padding: 0;
+}
+.Sidebar-List-Item{
+    padding: 10px;
+    border-bottom: 1px solid white;
+}

@@ -1,0 +1,19 @@
+.Content{
+    background-color: #d8d8d8;
+    padding: 10px;
+    text-align: left;
+}
+
+.Product-Text{
+    text-align: justify;
+}
+
+.Detail-List{
+    list-style-type: none;
+    padding: 0;
+}
+
+.Detail-List-Item{
+    padding: 5px;
+}
+

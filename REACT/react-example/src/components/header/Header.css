@@ -1,0 +1,34 @@
+.Header{
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+}
+
+.Header-Logo{
+    
+    color: white;
+}
+
+.Header-Logo h1{
+    font-weight: bolder;
+}
+
+.Nav{
+    padding: 10px;
+    height: 100%;
+}
+.Nav-List{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Nav-List-Item{
+    padding: 3px 5px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
