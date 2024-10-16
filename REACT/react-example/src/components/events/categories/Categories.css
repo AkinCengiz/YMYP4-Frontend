@@ -1,0 +1,13 @@
+.CategoryList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.Category-List-Item{
+    padding: 10px;
+    text-align: start;
+    border-bottom: 1px solid silver;
+}
+.Categories{
+    border: 1px solid silver;
+}

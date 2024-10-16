@@ -145,6 +145,10 @@ export default class List extends Component {
         {this.note} - Kaldınız...
       </p>
     );
+    state = {
+      selectedCategory : ""
+    }
+    
 
   render() {
     return (
@@ -160,11 +164,12 @@ export default class List extends Component {
           })}
         </ul>
         <h1>Kategoriler</h1>
+        <p>{this.state.selectedCategory}</p>
         <ul>
           {this.categories.map((category) => {
             return (
-              <li id={"category-" + category.id} key={category.id}>
-                {category.id} - {category.name}-{category.description}
+              <li onClick={()=> this.setState({selectedCategory : category.description})} id={"category-" + category.id} key={category.id}>
+                {category.name}
               </li>
             );
           })}

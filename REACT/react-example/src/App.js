@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import { Container } from "reactstrap";
 import List from "./components/list/List";
 import Main from "./components/main/Main";
+import Events from "./components/events/Events";
 
 function App() {
   let categories = ["Bilgisayar", "Cep Telefonu","Televizyon","Beyaz Eşya","Kitap","Giyim","Hobi"];
@@ -15,6 +16,7 @@ function App() {
           <Header data={categories} />
           <Main categoryList={categories} products={products}/>
           <List/>
+          <Events />
       </Container>
     </div>
   );
