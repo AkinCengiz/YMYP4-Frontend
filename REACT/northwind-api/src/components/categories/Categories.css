@@ -1,0 +1,9 @@
+.Category-List{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.Category-List-Item{
+    padding: 10px;
+    border-bottom: 1px solid silver;
+}
