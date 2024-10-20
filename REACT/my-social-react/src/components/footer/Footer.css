@@ -1,0 +1,12 @@
+ /* FOOTER */
+ .footer{
+    background-color: #4D636F;
+    color: white;
+    padding: 2rem 1rem;
+    font-size: 1.2rem;
+   }
+   .sub-footer{
+    background-color: #303E45;
+    color: white;
+    padding: 1rem 1rem;
+   }

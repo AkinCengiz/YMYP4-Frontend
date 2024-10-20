@@ -1,0 +1,50 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-title{
+    font-size: 1.2rem;
+}
+.card-image{
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid silver;
+    padding-bottom: 1rem;
+}
+img.card-img-top{
+    border-radius: 50%;
+}
+.card-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem;
+}
+
+/* MY SECTIONS */
+.my-section{
+    display: flex;
+    flex-direction: column;
+   }
+   .my-section button{
+    display: flex;
+    align-items: center;
+   }
+   .my-section button i{
+    margin-left: .5rem;
+    margin-right: 0.75rem;
+   }
+   .my-section .btn{
+    border-radius: 0;
+   }
+   .my-section button p{
+    margin-bottom: 0;
+   }
+      /* TAGS  */
+      .tags .w3-tag{
+        display: inline-block;
+    }
+

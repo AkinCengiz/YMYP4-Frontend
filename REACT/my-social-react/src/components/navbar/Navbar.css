@@ -1,0 +1,15 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style: none;
+}
+
+/* HEADER NAVBAR */
+#navbar{
+    background-color: #4D636F;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
