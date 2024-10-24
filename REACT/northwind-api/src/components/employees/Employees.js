@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Table } from "reactstrap";
+import { Table, Col } from "reactstrap";
 
 export default class Employees extends Component {
   state = {
@@ -15,7 +15,8 @@ export default class Employees extends Component {
   };
   render() {
     return (
-      <div>
+      <Col xs="7">
+        <div>
         <h3>Employees</h3>
         <Table>
           <thead>
@@ -50,6 +51,8 @@ export default class Employees extends Component {
           </tbody>
         </Table>
       </div>
+      </Col>
+      
     );
   }
 }

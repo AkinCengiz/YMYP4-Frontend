@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Col } from "reactstrap"
 import "./Categories.css";
 
 export default class Categories extends Component {
@@ -16,7 +17,8 @@ export default class Categories extends Component {
   }
   render() {
     return (
-      <div className="Categories">
+      <Col xs="2">
+        <div className="Categories">
         <h3>Categories</h3>
         <ul className="Category-List">
           {this.state.categories.map((category) => {
@@ -24,6 +26,8 @@ export default class Categories extends Component {
           })}
         </ul>
       </div>
+      </Col>
+      
     );
   }
 }

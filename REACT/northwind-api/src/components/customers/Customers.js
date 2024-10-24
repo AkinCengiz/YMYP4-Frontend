@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Col} from "reactstrap"
 import {
   ListGroup,
   ListGroupItem,
@@ -23,7 +24,7 @@ export default class Customers extends Component {
   };
   render() {
     return (
-      <>
+      <Col xs="7">
       <h3>Customers</h3>
       <div className="Customers">
         
@@ -51,8 +52,8 @@ export default class Customers extends Component {
             
           );
         })}
-      </div>
-      </>
+        </div>
+      </Col>
     );
   }
 }
