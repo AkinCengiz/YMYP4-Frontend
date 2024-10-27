@@ -1,53 +1,78 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class OurHotels extends Component {
+  state = {
+    images: [],
+  };
+
+  componentDidMount() {
+    this.getImages();
+  }
+
+  getImages = () => {
+    fetch("http://localhost:3000/images")
+      .then((res) => res.json())
+      .then((data) => {
+        let list = data.filter(x => Number(x.id) !== 1 && Number(x.id) !== 3);
+        this.setState({ images: list });
+      });
+  };
   render() {
     return (
-      <div>
-                  <div class="w3-container">
-            <h3>Our Hotels</h3>
-            <h6>You can find our hotels anywhere in the world:</h6>
-          </div>
-          
-          <div class="w3-row-padding w3-padding-16 w3-text-white w3-large">
-            <div class="w3-half w3-margin-bottom">
+      <>
+        <div class="w3-container">
+          <h3>Our Hotels</h3>
+          <h6>You can find our hotels anywhere in the world:</h6>
+        </div>
+
+        <div class="w3-row-padding w3-padding-16 w3-text-white w3-large">
+          {this.state.images.slice(0, 1).map((x) => (
+            <div class="w3-half w3-margin-bottom" key={x.id}>
               <div class="w3-display-container">
-                <img src="./images/cinqueterre.jpg" alt="Cinque Terre" style={{width:"100%"}}/>
-                <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
+                <img
+                  src={x.url}
+                  alt={x.alt}
+                  style={{width:"100%"}}
+                />
+                <span class="w3-display-bottomleft w3-padding">
+                  {x.alt}
+                </span>
               </div>
             </div>
-            <div class="w3-half">
-              <div class="w3-row-padding" style={{margin:"0 16px"}}>
-                <div class="w3-half w3-margin-bottom">
-                  <div class="w3-display-container">
-                    <img src="./images/newyork2.jpg" alt="New York" style={{width:"100%"}} />
-                    <span class="w3-display-bottomleft w3-padding">New York</span>
-                  </div>
-                </div>
-                <div class="w3-half w3-margin-bottom">
-                  <div class="w3-display-container">
-                    <img src="./images/sanfran.jpg" alt="San Francisco" style={{width:"100%"}} />
-                    <span class="w3-display-bottomleft w3-padding">San Francisco</span>
-                  </div>
-                </div>
-              </div>
-              <div class="w3-row-padding" style={{margin:"0 16px"}}>
-                <div class="w3-half w3-margin-bottom">
-                  <div class="w3-display-container">
-                    <img src="./images/pisa.jpg" alt="Pisa" style={{width:"100%"}} />
-                    <span class="w3-display-bottomleft w3-padding">Pisa</span>
-                  </div>
-                </div>
-                <div class="w3-half w3-margin-bottom">
-                  <div class="w3-display-container">
-                    <img src="./images/paris.jpg" alt="Paris" style={{width:"100%"}} />
-                    <span class="w3-display-bottomleft w3-padding">Paris</span>
-                  </div>
+          ))}
+
+          <div class="w3-half">
+          <div class="w3-row-padding"  style={{margin:"0 -16px"}}>
+            {
+              this.state.images.slice(1,3).map(x => (
+                <div class="w3-half w3-margin-bottom" key="x.id">
+                <div class="w3-display-container">
+                  <img
+                    src={x.url}
+                    alt={x.alt}
+                    style={{width:"100%"}}
+                  />
+                  <span class="w3-display-bottomleft w3-padding">{x.alt}</span>
                 </div>
               </div>
+              ))
+            }
+            </div>
+            <div class="w3-row-padding" style={{margin:"0 -16px"}}>
+              {
+                this.state.images.slice(3,5).map(x => (
+                  <div class="w3-half w3-margin-bottom" key={x.id}>
+                <div class="w3-display-container">
+                  <img src={x.url} alt={x.alt} style={{width:"100%"}} />
+                  <span class="w3-display-bottomleft w3-padding">{x.alt}</span>
+                </div>
+              </div>
+                ))
+              }
             </div>
           </div>
-      </div>
-    )
+        </div>
+      </>
+    );
   }
 }

@@ -132,9 +132,9 @@
                     "wifi" : true,
                     "tv" : false,
                     "service" : false,
-                    "price" : 99,
+                    "price" : 399,
                     "bedSize" : "Single Bed",
-                    "imageUrl" : "./room_single.jpg"
+                    "imageUrl" : "./images/room_single.jpg"
                 }
             ]
         },
@@ -148,9 +148,9 @@
                     "wifi" : true,
                     "tv" : true,
                     "service" : false,
-                    "price" : 149,
+                    "price" : 449,
                     "bedSize" : "Queen-size bed",
-                    "imageUrl" : "./room_double.jpg"
+                    "imageUrl" : "./images/room_double.jpg"
                 }
             ]
         },
@@ -164,9 +164,9 @@
                     "wifi" : true,
                     "tv" : true,
                     "service" : true,
-                    "price" : 199,
+                    "price" : 499,
                     "bedSize" : "King-size bed",
-                    "imageUrl" : "./room_deluxe.jpg"
+                    "imageUrl" : "./images/room_deluxe.jpg"
                 }
             ]
         }

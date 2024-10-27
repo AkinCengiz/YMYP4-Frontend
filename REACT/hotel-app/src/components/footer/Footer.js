@@ -19,7 +19,7 @@ export default class Footer extends Component {
         <div class="w3-xlarge w3-padding-16">
             {
                 this.state.socialAccounts.map(account => (
-                    <i class={account.icon} style={{padding:"2px"}}> </i>
+                    <i class={account.icon} style={{padding:"2px"}} key={account.id}> </i>
                 ))
             }
           {/* <i class="fa fa-facebook-official w3-hover-opacity"></i>

@@ -6,21 +6,21 @@ import ContactInfo from "./contactinfo/ContactInfo";
 import OurHotels from "./ourhotels/OurHotels";
 import NewsLetters from "./newsletters/NewsLetters";
 import Contact from "./contact/Contact";
+import PageImage from "../pageimage/PageImage";
 
 export default class Content extends Component {
   render() {
     return (
       // <!-- Page content -->
       <div class="w3-content" style={{ maxWidth: "1532px" }}>
+        <PageImage pageImage={this.props.pageImage} images={this.props.images} />
         <Reservation />
-        <Rooms />
+        <Rooms rooms = {this.props.rooms} roomTypes = {this.props.roomTypes} />
         <About />
-        <ContactInfo />
+        <ContactInfo contactInfo = {this.props.contactInfo} />
         <OurHotels />
         <NewsLetters />
-
         <Contact />
-
         {/* <!-- End page content --> */}
       </div>
     );
