@@ -134,7 +134,8 @@
                     "service" : false,
                     "price" : 399,
                     "bedSize" : "Single Bed",
-                    "imageUrl" : "./images/room_single.jpg"
+                    "imageUrl" : "../images/room_single.jpg",
+                    "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum vero dicta ex quisquam. Magni perspiciatis iure, esse, aut voluptatem obcaecati corrupti repudiandae laudantium dolorum odio nulla assumenda. Ea illo dolore perspiciatis dolores, pariatur incidunt inventore, commodi quis voluptatibus unde deserunt, qui nostrum. At alias rem dolor corrupti odio porro, nihil voluptatibus voluptatum id, tempora error sint suscipit tempore architecto consectetur aperiam culpa facere! Optio quibusdam error dolore recusandae necessitatibus?"
                 }
             ]
         },
@@ -150,7 +151,8 @@
                     "service" : false,
                     "price" : 449,
                     "bedSize" : "Queen-size bed",
-                    "imageUrl" : "./images/room_double.jpg"
+                    "imageUrl" : "../images/room_double.jpg",
+                    "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum vero dicta ex quisquam. Magni perspiciatis iure, esse, aut voluptatem obcaecati corrupti repudiandae laudantium dolorum odio nulla assumenda. Ea illo dolore perspiciatis dolores, pariatur incidunt inventore, commodi quis voluptatibus unde deserunt, qui nostrum. At alias rem dolor corrupti odio porro, nihil voluptatibus voluptatum id, tempora error sint suscipit tempore architecto consectetur aperiam culpa facere! Optio quibusdam error dolore recusandae necessitatibus?"
                 }
             ]
         },
@@ -166,7 +168,8 @@
                     "service" : true,
                     "price" : 499,
                     "bedSize" : "King-size bed",
-                    "imageUrl" : "./images/room_deluxe.jpg"
+                    "imageUrl" : "../images/room_deluxe.jpg",
+                    "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum vero dicta ex quisquam. Magni perspiciatis iure, esse, aut voluptatem obcaecati corrupti repudiandae laudantium dolorum odio nulla assumenda. Ea illo dolore perspiciatis dolores, pariatur incidunt inventore, commodi quis voluptatibus unde deserunt, qui nostrum. At alias rem dolor corrupti odio porro, nihil voluptatibus voluptatum id, tempora error sint suscipit tempore architecto consectetur aperiam culpa facere! Optio quibusdam error dolore recusandae necessitatibus?"
                 }
             ]
         }

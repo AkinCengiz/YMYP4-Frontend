@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row } from "reactstrap";
 import Menu from './components/menu/Menu';
-import PageImage from './components/pageimage/PageImage';
 import Content from './components/content/Content';
 import Footer from './components/footer/Footer';
 import { Routes, Route } from "react-router-dom";
@@ -14,7 +13,12 @@ export default class App extends Component {
     pageImage : "",
     contactInfo : null,
     rooms : [],
-    roomTypes : []
+    roomTypes : [],
+    selectedRoom : 0
+  }
+  selectRoom = (room) => {
+    this.setState({selectedRoom:room.id});
+    return this.state.selectedRoom;
   }
   componentDidMount(){
     this.getImages();
@@ -54,8 +58,8 @@ export default class App extends Component {
             {/* <PageImage pageImage={this.state.pageImage} images={this.state.images} /> */}
             <Routes>
               <Route path="/" element={<Content contactInfo={this.state.contactInfo} rooms = {this.state.rooms} roomTypes = {this.state.roomTypes} pageImage={this.state.pageImage} images={this.state.images}/>}/>
-              <Route path='rooms/' element={<RoomList rooms = {this.state.rooms} roomTypes = {this.state.roomTypes}/>}/>
-              <Route path='roomdetail/' element={<RoomDetail />} />
+              <Route path='rooms/' element={<RoomList rooms = {this.state.rooms} roomTypes = {this.state.roomTypes} selectRoom={this.selectRoom} />}/>
+              <Route path='roomdetail/:roomId' element={<RoomDetail rooms = { this.state.rooms} roomTypes={ this.state.roomTypes } selectedRoom = {this.state.selectedRoom}  />} />
             </Routes>            
           </Row>
         </Container>
