@@ -17,8 +17,7 @@ export default class App extends Component {
     selectedRoom : 0
   }
   selectRoom = (room) => {
-    this.setState({selectedRoom:room.id});
-    return this.state.selectedRoom;
+    this.setState({selectedRoom:room.id});    
   }
   componentDidMount(){
     this.getImages();
