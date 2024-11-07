@@ -1,0 +1,4 @@
+export const ADD_PRODUCT = "ADD_PRODUCT";
+export const GET_PRODUCTS = "GET_PRODUCTS";
+export const CHANGE_CATEGORY = "CHANGE_CATEGORY";
+export const ADD_CATEGORY = "ADD_CATEGORY";

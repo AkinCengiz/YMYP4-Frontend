@@ -43,50 +43,66 @@ const reducer = (state,action) => {
   }
 }
 
-// const addUser = (user) => {
-//   return{
-//     type : "createUser",
-//     payload : user
-//   }
-// }
+const addUser = (user) => {
+  return{
+    type : "createUser",
+    payload : user//{id:1,name:"Akın"}
+  }
+}
 
-// const userReduce = (state,action) => {
-//   switch(action.type){
-//     case "createUser":
-//       return action.payload;
-//     default :
-//       return state;
-//   }
-// }
+const userReduce = (state,action) => {
+  switch(action.type){
+    case "createUser":
+      return [...state,action.payload];
+    default :
+      return state;
+  }
+}
 
 
 
 function App() {
  
-  const [numberOne,setNumberOne] = useState(1);
+  const [numberOne,setNumberOne] = useState(0);
   // const [numberTwo, setNumberTwo] = useState(0);
   const [result,dispatch] = useReducer(reducer,numberOne);
-  // const [user, setUser] = useState({id:1,name:"Akın"});
 
-  // const [users,userActions] = useReducer(userReduce,[]);
+
+  
+  //USER İŞLEMLERİ
+  //********************************************************** */
+  const [user, setUser] = useState({id:1,name:"Akın"});
+  const [users,userDispatch] = useReducer(userReduce,[]);
   const changeNumberOne = (e) => {
     setNumberOne(Number(e.target.value));
   }
+
+  const handleAddUser = () => {
+     userDispatch(addUser(user));
+     setUser({id:"",name:""});
+  }
   
-  // cocnst changeNumberTwo = (e) => {
+  // const changeNumberTwo = (e) => {
   //   setNumberTwo(Number(e.target.value));
   // }
   return (
     <div className="App">
       <p>Result : {result}</p>
-      <input type='number' placeholder='Number One' onChange={changeNumberOne}/>
-      {/* <input type='number'placeholder='Number Two' onChange={changeNumberTwo} /> */}
+      <input type='number' placeholder='number write' onChange={changeNumberOne}/>
+      {/* {<input type='number'placeholder='Number Two' onChange={changeNumberTwo} />} */}
       <button onClick={() => dispatch(added(numberOne))}>ADDED</button>
       <button onClick={() => dispatch(decrement(numberOne))}>DECREMENT</button>
       <button onClick={() => dispatch(divide(numberOne))}>DIVIDE</button>
       <button onClick={() => dispatch(multiply(numberOne))}>MULTIPLY</button>
-      {/* <button onClick={() => dispatch(addUser(user))}>AddUser</button>
-      {console.log(users)}; */}
+      <button onClick={() => userDispatch(addUser(user))}>AddUser</button>
+      <button onClick={() => userDispatch(divide(user))}>AddUser</button>
+      <div>
+        {users.length > 0 ? (
+          <p>User: {users[0].id} - {users[0].name}</p>
+        ) : (
+          <p>No user added yet</p>
+        )}
+      </div>
     </div>
   );
 }
